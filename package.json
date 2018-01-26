@@ -15,9 +15,9 @@
   },
   "author": "Eric HENRY",
   "license": "MIT",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/e-henry/sspk.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/e-henry/sspk.git"
   },
   "devDependencies": {
     "eslint": "^4.14.0",
