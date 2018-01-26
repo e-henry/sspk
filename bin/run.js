@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict'
 const sspk = require('../lib/sspk')
 const edlfiles = require('../lib/edlfiles')
