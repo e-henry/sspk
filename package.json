@@ -11,7 +11,8 @@
   },
   "scripts": {
     "lint": "eslint src test",
-    "test": "tap test/*.js"
+    "test": "tap test/*.js",
+    "test:coverage": "tap test/*.js --cov"
   },
   "author": "Eric HENRY",
   "license": "MIT",
@@ -20,6 +21,7 @@
     "url": "https://github.com/e-henry/sspk.git"
   },
   "devDependencies": {
+    "coveralls": "^3.0.0",
     "eslint": "^4.14.0",
     "eslint-config-usecases": "^1.2.2",
     "tap": "^11.0.1"
