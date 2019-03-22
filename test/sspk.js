@@ -72,5 +72,18 @@ tap.test('Validating full file', (t) => {
   t.throws(() => {
     app.verify('test/empty.yml')
   }, new Error('The file has no entry', 'throws on incorrect file'))
+
+  t.end()
+})
+
+  tap.test('Validating git account', (t) => {
+  t.rejects(
+     app.accountGitChecker('github.com',"badnamezazazaza")
+  )
+
+  t.resolves(
+    app.accountGitChecker('github.com',"e-henry")
+  )
+
   t.end()
 })
