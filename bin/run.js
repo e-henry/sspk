@@ -19,6 +19,7 @@ let validate = (filepath) => {
     if (err.isJoi) {
       console.log(chalk.yellow('Details: ') + err.annotate())
     }
+    process.exit(1);
   }
 }
 
