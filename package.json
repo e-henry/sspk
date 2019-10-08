@@ -1,6 +1,6 @@
 {
   "name": "sspk",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Project allowing to retrieve ssh public keys",
   "bin": {
     "sspk": "bin/run.js"
@@ -10,7 +10,8 @@
     "node": ">=6"
   },
   "scripts": {
-    "lint": "eslint src test",
+    "lint": "eslint bin lib test",
+    "lint:fix": "eslint --fix bin lib test",
     "test": "tap test/*.js",
     "test:coverage": "tap test/*.js --cov"
   },
