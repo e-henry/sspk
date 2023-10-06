@@ -12,7 +12,7 @@
   "scripts": {
     "lint": "eslint bin lib test",
     "lint:fix": "eslint --fix bin lib test",
-    "test": "tap test/*.js",
+    "test": "tap test/*.js --reporter classic",
     "test:coverage": "tap test/*.js --cov"
   },
   "author": "Eric HENRY",
