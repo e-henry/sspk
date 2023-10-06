@@ -76,21 +76,21 @@ tap.test('Validating full file', (t) => {
   t.end()
 })
 
-  tap.test('Validating git account', (t) => {
+tap.test('Validating git account', (t) => {
   t.rejects(
-     app.githubAccountChecker('github.com',"badnamezazazaza")
+    app.githubAccountChecker('github.com', 'badnamezazazaza')
   )
 
   t.resolves(
-    app.githubAccountChecker('github.com',"e-henry")
+    app.githubAccountChecker('github.com', 'e-henry')
   )
 
   t.rejects(
-     app.gitlabAccountChecker('gitlab.com',"badnamezazazaza")
+    app.gitlabAccountChecker('gitlab.com', 'badnamezazazaza')
   )
 
   t.resolves(
-    app.gitlabAccountChecker('gitlab.com',"e-henry")
+    app.gitlabAccountChecker('gitlab.com', 'e-henry')
   )
   t.end()
 })
